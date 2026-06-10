@@ -18,9 +18,9 @@
   --text-muted: #5f6e7e;
   --text-light: #9aabb8;
   --border:     rgba(13,43,78,0.12);
-  --serif:      'Playfair Display', Georgia, serif;
-  --sans:       'DM Sans', system-ui, sans-serif;
-  --mono:       'DM Mono', monospace;
+  --serif:      'Inter', system-ui, sans-serif;
+  --sans:       'Inter', system-ui, sans-serif;
+  --mono:       'Inter', system-ui, sans-serif;
   --t:          0.25s ease;
 }
 
@@ -64,13 +64,13 @@ h1.display {
   margin-bottom: 24px;
 }
 body.dark h1.display { color: var(--navy-muted); }
-h1.display em { font-style: italic; color: var(--navy-mid); }
+h1.display em { font-style: normal; font-weight: 300; color: var(--navy-mid); }
 
 /* Level 2 — Subheading label */
 h2.subhead {
   font-family: var(--sans);
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--navy-mid);
