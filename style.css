@@ -802,17 +802,19 @@ body.dark .footer-name { color: var(--navy-muted); }
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .about-grid, .contact-grid, .testi-grid, .edu-grid { grid-template-columns: 1fr; }
+  .about-grid { gap: 36px; }
+  .contact-grid { gap: 36px; }
   .projects-grid, .demo-grid, .cv-columns { grid-template-columns: 1fr; }
-  .demo-card-wide { min-height: 320px; }
+  .demo-card-wide { min-height: 280px; grid-row: span 1; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
   .blog-grid { grid-template-columns: 1fr 1fr; }
   .exp-item { grid-template-columns: 1fr; gap: 12px; }
 }
 @media (max-width: 768px) {
-  .hero { grid-template-columns: 1fr; padding: 60px 0 40px; gap: 40px; }
+  .hero { grid-template-columns: 1fr; padding: 60px 0 40px; gap: 32px; }
   .hero-right { flex-direction: row; align-items: flex-start; flex-wrap: wrap; }
-  .hero-photo { width: 100px; height: 130px; }
-  .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 60px; left: 0; right: 0; background: var(--cream); border-bottom: 1px solid var(--border); padding: 16px 40px; }
+  .hero-photo { width: 140px; height: 180px; }
+  .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 60px; left: 0; right: 0; background: var(--cream); border-bottom: 1px solid var(--border); padding: 16px 20px; }
   .nav-links.open { display: flex; }
   .nav-links li { padding: 10px 0; border-bottom: 1px solid var(--border); }
   .nav-links li:last-child { border-bottom: none; }
@@ -824,16 +826,27 @@ body.dark .footer-name { color: var(--navy-muted); }
   section { padding: 60px 0; }
   .skills-grid, .blog-grid { grid-template-columns: 1fr; }
   .cv-head { flex-direction: column; }
+  .modal { padding: 28px 20px; }
+  .testi-grid { gap: 16px; }
 }
 @media (max-width: 480px) {
-  h1.display { font-size: 36px; }
+  h1.display { font-size: 32px; }
+  h3.section-title { font-size: 24px; margin-bottom: 32px; }
   .btn-row { flex-direction: column; align-items: flex-start; }
   .cv-actions, .cv-actions .cv-btn { width: 100%; }
-  .cv-panel { padding: 24px 18px; }
+  .cv-panel { padding: 20px 16px; }
+  .cv-columns { gap: 24px; }
   .cert-row { align-items: flex-start; flex-direction: column; gap: 12px; padding: 16px; }
   .cert-right { align-items: flex-start; flex-direction: column; gap: 8px; }
-  .project-card { min-height: 0; padding: 24px 18px; }
+  .project-card { min-height: 0; padding: 20px 16px; }
   .project-topline { align-items: flex-start; flex-direction: column; }
+  .demo-card { padding: 20px 16px; min-height: 0; }
+  .ai-box { padding: 24px 16px; }
+  .ai-form { flex-direction: column; }
+  .ai-btn { width: 100%; }
+  .contact-form-box { padding: 22px 16px; }
+  .modal { padding: 24px 16px; max-height: 90vh; }
+  .hero-photo { width: 120px; height: 155px; }
 }
 
 @media print {
